@@ -1,0 +1,48 @@
+<ion-content [fullscreen]="true">
+  <div class="gradient">
+    <h1>Olá, "seu names"</h1>
+  </div>
+  
+  <div class="text-box">
+    <div class="info-box">
+      <h2>R$1,290</h2>
+      <p>Semanal</p>
+    </div>
+
+    <div class="info-box">
+      <h2>R$9,030</h2>
+      <p>Mensal</p>
+    </div>
+
+    <div class="info-box">
+      <h2>R$36,120</h2>
+      <p>Anual</p>
+    </div>
+  </div>
+
+
+</ion-content>
+
+<!-- footer com blabla -->
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button>
+    <ion-icon name="receipt-outline"></ion-icon>
+  </ion-tab-button>
+  
+  <ion-tab-button>
+    <ion-icon name="stats-chart-outline" routerLink="../estatisticas"></ion-icon>
+  </ion-tab-button>
+  
+  <ion-tab-button>
+    <ion-icon name="home-outline" routerLink="../inicio" class="selected"></ion-icon>
+  </ion-tab-button>
+  
+  <ion-tab-button>
+    <ion-icon routerLink="../produtos" name="cube-outline"></ion-icon>
+  </ion-tab-button>
+  
+  <ion-tab-button>
+    <ion-icon name="settings-outline"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>
