@@ -41,29 +41,6 @@
       <button class="editar">Editar</button>
     </div>
     <div class="cards">
-      <div class="titititi">
-        <h1>
-          porra porra porra porra porra porra porra porra porra porra porra
-          porra porra porra porra porra porra porra porra porra porra porra
-          porra porra porra porra porra porra porra porra porra porra
-        </h1>
-      </div>
-      <div class="card-text-dentro">
-        <p>Quantidade:</p>
-        <p class="background">43</p>
-      </div>
-      <div class="card-text-dentro">
-        <p>Preço:</p>
-        <p class="background">R$ 20,00</p>
-      </div>
-      <div class="card-text-dentro">
-        <p>Validade:</p>
-        <p class="background">20/12</p>
-      </div>
-
-      <button class="editar">Editar</button>
-    </div>
-    <div class="cards">
       <h1>Salsichas</h1>
 
       <div class="card-text-dentro">
@@ -101,16 +78,98 @@
     </div>
   </div>
 
-  <div class="ProdVendidos">
+
+  <!-- Gráfico dos produtos mais vendidos -->
+
+  <div class="titulos">
     <h1>Produtos mais vendidos</h1>
   </div>
 
-  <div>
-    <div class="graf"><p>70 Vendas</p></div>
+
+    
+  <div class="graficos">
+
+    <div class="weee">
+
+      <h1>Coca-Cola</h1>
+
+      <div class="graf" style="height: 110px; background-color: #3282CC;">
+        <p>50 vendas</p>
+      </div>
+    </div>
+
+    <div class="weee">
+
+      <h1>Hamburguer</h1>
+
+      <div class="graf" style="height: 180px; background-color: #39A0FF;">
+        <p>70 vendas</p>
+      </div>
+    </div>
+
+
+    <div class="weee">
+
+
+        <h1>Batata M</h1>
+
+      <div class="graf" style="height: 75px; background-color: #1D5992;">
+        <p>30 vendas</p>
+      </div>
+    </div>
+
   </div>
+
+
+
+
+
+  <div class="titulos">
+    <h1>Estoque</h1>
+  </div>
+
+
+  <!-- Estoque -->
+
+
+
+  <ion-list [inset]="true">
+
+
+      <div class="titulo-prod">
+
+        
+        <div class="estoques">
+          <p>Produtos</p>
+        </div>
+
+        
+        <div class="estoques">
+          <p>Quantidade <br> atual</p>
+        </div>
+
+        
+        <div class="estoques">
+          <p>Estoque <br> máximo</p>
+        </div>
+
+
+      </div>
+    
+      <hr style="color: black;">
+      
+    <ion-item>
+        <ion-label>amborgue</ion-label>
+      </ion-item>
+      
+    </ion-list>
+
+
+
+
 </ion-content>
 
-<!-- footer com blabla -->
+<!-- footer -->
 
 <ion-tab-bar slot="bottom">
   <ion-tab-button>
@@ -118,10 +177,7 @@
   </ion-tab-button>
 
   <ion-tab-button>
-    <ion-icon
-      name="stats-chart-outline"
-      routerLink="../estatisticas"
-    ></ion-icon>
+    <ion-icon name="stats-chart-outline" routerLink="../estatisticas"></ion-icon>
   </ion-tab-button>
 
   <ion-tab-button>
@@ -129,14 +185,10 @@
   </ion-tab-button>
 
   <ion-tab-button>
-    <ion-icon
-      routerLink="../produtos"
-      name="cube-outline"
-      class="selected"
-    ></ion-icon>
+    <ion-icon routerLink="../produtos" name="cube-outline" class="selected"></ion-icon>
   </ion-tab-button>
 
   <ion-tab-button>
     <ion-icon name="settings-outline"></ion-icon>
   </ion-tab-button>
-</ion-tab-bar>
+</ion-tab-bar>  

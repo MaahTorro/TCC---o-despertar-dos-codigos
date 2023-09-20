@@ -1,24 +1,25 @@
-<ion-header [translucent]="true">
+<ion-header>
+  
+  <div class="gradient">
+    <h1><u>Produtos</u></h1>
+  </div>
+
+
+
   <ion-list>
-
-    <ion-header>
-    <ion-toolbar>
-      <ion-title>Lista de produtos</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-
     <ion-item-sliding>
       <ion-item lines="full">
-
         <ion-thumbnail slot="start">
-          <img src="../../assets/batata.png" alt="socorro" />
+          <img src="../../assets/batata.png" alt="" />
         </ion-thumbnail>
-
         <ion-label class="ion-text-wrap">
           <div>
             <h1>Batata</h1>
-            <p>12</p>
+            <div class="text-dentro-card">
+              <p>31x</p>
+              <p>04/02</p>
+              <p class="preco">R$ 12,99 </p>
+            </div>
             <ion-badge color="medium">
             </ion-badge>
           </div>
@@ -28,7 +29,39 @@
         <ion-item-option color="primary">
           <ion-icon slot="icon-only" name="pencil"></ion-icon>
         </ion-item-option>
-        <ion-item-option color="danger">
+        <ion-item-option color="danger" expandable>
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+
+    <ion-item-sliding>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img
+            src="https://apoioentrega.vteximg.com.br/arquivos/ids/466641/SALSICHA-HOT-DOG-PERDIGAO-KG-RESFD.jpg?v=637442338663800000"
+            alt="" />
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>Salsichas</h1>
+            <div class="text-dentro-card">
+              <p>24x</p>
+              <p>11/5</p>
+              <p class="preco">R$ 8,99 </p>
+            </div>
+            <ion-badge color="medium">
+            </ion-badge>
+          </div>
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="primary">
+          <ion-icon slot="icon-only" name="pencil"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="danger" expandable>
           <ion-icon slot="icon-only" name="trash"></ion-icon>
         </ion-item-option>
       </ion-item-options>
@@ -38,6 +71,15 @@
 
   </ion-list>
 
-      <div class="botao-center">
-        <button class="botao"><ion-icon name="arrow-forward-outline"></ion-icon> </button>
-      </div>
+<!-- Botão continuar -->
+
+  <div class="botao-center">
+    <button class="botao-add">
+      <ion-icon name="add-outline"></ion-icon>
+    </button>
+  </div>
+  <div class="botao-center">
+    <button class="botao" routerLink="../inicio">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </button>
+  </div>
