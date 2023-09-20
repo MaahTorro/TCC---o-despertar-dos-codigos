@@ -217,6 +217,17 @@ ion-tabs {
     border-radius: 5px 0px 0px 5px;
   }
   
+
+  .backgroundadd {
+    background-color: #00b1b1;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0px 0px 5px;
+  }
+  
   .backgroundvender p {
     color: #ffffff;
     text-align: center;
@@ -229,6 +240,10 @@ ion-tabs {
     color: white;
     font-size: 34px;
     font-weight: 700;
+  }
+
+  .teste {
+    font-size: 23px;
   }
 
   .box-vender {
@@ -273,4 +288,39 @@ ion-buttons {
   height: 125px;
   width: 125px;
   border-radius: 100%;
+}
+
+ion-menu-button ion-icon {
+  color: rgb(66, 66, 66);
+}
+
+// menu ajustes
+
+.ajustes-single {
+  height: 45px;
+  width: 100% ;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.ajustes-single p {
+  margin-left: 12px;
+}
+
+.a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.a ion-icon {
+  margin-right: 15px;
+  font-size: 28px;
+  margin-top: 5px;
+  color: rgb(114, 114, 114);
 }

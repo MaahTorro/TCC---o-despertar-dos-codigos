@@ -24,20 +24,6 @@
 
   </div>
 
-  <!-- <ion-menu side="end" contentId="main-content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Menu Content</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content class="ion-padding">This is the menu content.</ion-content>
-  </ion-menu>
-  <div class="ion-page" id="main-content">
-        <ion-buttons slot="end">
-          <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-  </div> -->
-
   <div class="lembrete-titulo" routerLink="../lembretes">
     <h2>Lembretes</h2>
     <ion-icon class="icone-arrow" name="caret-forward-outline"></ion-icon>
@@ -87,7 +73,7 @@
 
 
     <div class="box-estat">
-      
+
       <div class="graficoredondo"></div>
 
       <div class="flex-estat">
@@ -155,7 +141,7 @@
       </div>
 
       <button class="lembretes" routerLink="../listaprod">
-        <div class="backgroundvender">
+        <div class="backgroundadd">
           <ion-icon name="add-outline">
           </ion-icon>
         </div>
@@ -167,7 +153,38 @@
 
   </div>
 
+
+
 </ion-content>
+
+
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <div class="a">
+
+        <ion-title>Ajustes</ion-title>
+        <ion-menu-toggle>
+          <ion-icon name="close"></ion-icon>
+        </ion-menu-toggle>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+
+    <div class="ajustes-single">
+      <p>Detalhes da conta</p>
+    </div>
+    <div class="ajustes-single">
+      <p>Privacidade</p>
+    </div>
+    <div class="ajustes-single" style="color: red;">
+      <p>Sair da conta</p>
+    </div>
+
+
+  </ion-content>
+</ion-menu>
 
 <!-- footer -->
 
@@ -189,6 +206,14 @@
   </ion-tab-button>
 
   <ion-tab-button>
-    <ion-icon name="settings-outline"></ion-icon>
+    <div class="" id="main-content">
+      <ion-buttons>
+        <ion-menu-button>
+          <ion-icon name="settings-outline"></ion-icon>
+        </ion-menu-button>
+      </ion-buttons>
+    </div>
+
   </ion-tab-button>
+
 </ion-tab-bar>
