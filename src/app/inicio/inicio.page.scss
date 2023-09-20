@@ -196,9 +196,19 @@ ion-tabs {
     align-items: center;
   }
   
+  .azul {
+    background-color: #143CC9;
+  }
+  
+  .amarelo {
+    background-color: #FFC700;
+  }
+  
+  .vermelho {
+    background-color: #EB1F1F;
+  }
 
   .backgroundvender {
-    background-color: #00b1b1;
     height: 45px;
     width: 45px;
     display: flex;
@@ -256,4 +266,11 @@ ion-tabs {
 
 ion-buttons {
   align-self: flex-end;
+}
+
+.graficoredondo {
+  background-color: blue;
+  height: 125px;
+  width: 125px;
+  border-radius: 100%;
 }
