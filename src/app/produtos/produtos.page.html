@@ -20,10 +20,10 @@
         <p class="background">20/12</p>
       </div>
 
-      <button class="editar">Editar</button>
+      <button class="editar" routerLink="../prodselect">Editar</button>
     </div>
     <div class="cards">
-      <h1>Abacaxi da Africa</h1>
+      <h1>Abacaxi</h1>
 
       <div class="card-text-dentro">
         <p>Quantidade:</p>
@@ -38,7 +38,7 @@
         <p class="background">20/12</p>
       </div>
 
-      <button class="editar">Editar</button>
+      <button class="editar" routerLink="../prodselect">Editar</button>
     </div>
     <div class="cards">
       <h1>Salsichas</h1>
@@ -56,7 +56,7 @@
         <p class="background">20/12</p>
       </div>
 
-      <button class="editar">Editar</button>
+      <button class="editar" routerLink="../prodselect">Editar</button>
     </div>
     <div class="cards">
       <h1>Batatas fritas</h1>
@@ -86,7 +86,7 @@
   </div>
 
 
-    
+
   <div class="graficos">
 
     <div class="weee">
@@ -111,7 +111,7 @@
     <div class="weee">
 
 
-        <h1>Batata M</h1>
+      <h1>Batata M</h1>
 
       <div class="graf" style="height: 75px; background-color: #1D5992;">
         <p>30 vendas</p>
@@ -136,39 +136,80 @@
   <ion-list [inset]="true">
 
 
-      <div class="titulo-prod">
+    <div class="titulo-prod">
 
-        
-        <div class="estoques">
-          <p>Produtos</p>
+
+      <div class="estoques">
+        <p class="titulo-estoques">Produtos <br> no estoque</p>
+        <div class="produtos">
+          <p>Hamburguer</p>
+          <p>Alface</p>
+          <p>Abacaxi do sul da africa</p>
+          <p>X - Salada</p>
         </div>
-
-        
-        <div class="estoques">
-          <p>Quantidade <br> atual</p>
-        </div>
-
-        
-        <div class="estoques">
-          <p>Estoque <br> máximo</p>
-        </div>
-
-
       </div>
-    
-      <hr style="color: black;">
-      
-    <ion-item>
-        <ion-label>amborgue</ion-label>
-      </ion-item>
-      
-    </ion-list>
+
+
+      <div class="estoques">
+        <p class="titulo-estoques">Quantidade <br> atual</p>
+        <div class="produtos">
+          <p>60</p>
+          <p>23</p>
+          <p>53</p>
+          <p>20</p>
+        </div>
+      </div>
+
+      <div class="estoques">
+        <p class="titulo-estoques">Estoque <br> máximo</p>
+        <div class="produtos">
+          <p>70</p>
+          <p>70</p>
+          <p>80</p>
+          <p>25</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <hr style="color: black;">
 
 
 
+  </ion-list>
 
 </ion-content>
 
+
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <div class="a">
+
+        <ion-title>Ajustes</ion-title>
+        <ion-menu-toggle>
+          <ion-icon name="close"></ion-icon>
+        </ion-menu-toggle>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+
+    <div class="ajustes-single">
+      <p>Detalhes da conta</p>
+    </div>
+    <div class="ajustes-single">
+      <p>Privacidade</p>
+    </div>
+    <div class="ajustes-single" style="color: red;" id="present-alert">
+      <p>Sair da conta</p>
+    </div>
+
+    <ion-alert trigger="present-alert" class="custom-alert" header="Deseja sair da conta?" [buttons]="alertButtons"></ion-alert>
+
+  </ion-content>
+</ion-menu>
 <!-- footer -->
 
 <ion-tab-bar slot="bottom">
@@ -177,11 +218,11 @@
   </ion-tab-button>
 
   <ion-tab-button>
-    <ion-icon name="stats-chart-outline" routerLink="../estatisticas"></ion-icon>
+    <ion-icon name="stats-chart-outline" routerLink="../estatisticas" class=""></ion-icon>
   </ion-tab-button>
 
   <ion-tab-button>
-    <ion-icon name="home-outline" routerLink="../inicio"></ion-icon>
+    <ion-icon name="home-outline" routerLink="../inicio" class=""></ion-icon>
   </ion-tab-button>
 
   <ion-tab-button>
@@ -189,6 +230,15 @@
   </ion-tab-button>
 
   <ion-tab-button>
-    <ion-icon name="settings-outline"></ion-icon>
+    <div class="" id="main-content">
+      <ion-buttons>
+        <ion-menu-button>
+          <ion-icon name="settings-outline" style="color: rgb(75, 75, 75);"></ion-icon>
+        </ion-menu-button>
+      </ion-buttons>
+    </div>
+
   </ion-tab-button>
-</ion-tab-bar>  
+
+</ion-tab-bar>
+

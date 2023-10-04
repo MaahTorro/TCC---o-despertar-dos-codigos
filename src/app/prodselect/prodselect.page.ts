@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-produtos',
-  templateUrl: './produtos.page.html',
-  styleUrls: ['./produtos.page.scss'],
+  selector: 'app-prodselect',
+  templateUrl: './prodselect.page.html',
+  styleUrls: ['./prodselect.page.scss'],
 })
-export class ProdutosPage implements OnInit {
+export class ProdselectPage implements OnInit {
 
   public alertButtons = [
     {

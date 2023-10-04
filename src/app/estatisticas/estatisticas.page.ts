@@ -7,6 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EstatisticasPage implements OnInit {
 
+  public alertButtons = [
+    {
+      text: 'Cancelar',
+      handler: () => {
+        console.log('usuário cancelou')
+      }
+    },
+    {
+      text: 'Sair',
+      handler: () => {
+        window.location.href = "../home"
+      }
+
+    },
+  ];
+
   constructor() { }
 
   ngOnInit() {

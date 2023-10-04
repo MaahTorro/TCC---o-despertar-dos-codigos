@@ -159,3 +159,31 @@
   margin: 0;
   padding: 0;
 }
+
+.estoques {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 340px;
+  font-weight: 700;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-estoques {
+  color: #143cc9;
+  font-weight: 700;
+}
+
+.produtos p {
+  max-width: 120px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

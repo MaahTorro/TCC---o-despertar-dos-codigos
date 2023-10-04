@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'editarprod',
     loadChildren: () => import('./editarprod/editarprod.module').then( m => m.EditarprodPageModule)
   },
+  {
+    path: 'prodselect',
+    loadChildren: () => import('./prodselect/prodselect.module').then( m => m.ProdselectPageModule)
+  },
 ];
 
 @NgModule({

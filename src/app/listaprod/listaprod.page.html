@@ -1,5 +1,5 @@
-<ion-header>
-  
+<ion-content>
+
   <div class="gradient">
     <h1><u>Produtos</u></h1>
   </div>
@@ -73,13 +73,23 @@
 
 <!-- Botão continuar -->
 
-  <div class="botao-center">
-    <button class="botao-add">
-      <ion-icon name="add-outline"></ion-icon>
-    </button>
-  </div>
+<ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button id="present-alert">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+  </ion-fab>
+  <ion-alert
+  trigger="present-alert"
+  header="Deseja adicionar um novo produto?"
+  [buttons]="alertButtons"
+></ion-alert>
+
+
+
   <div class="botao-center">
     <button class="botao" routerLink="../inicio">
       <ion-icon name="arrow-forward-outline"></ion-icon>
     </button>
   </div>
+</ion-content>

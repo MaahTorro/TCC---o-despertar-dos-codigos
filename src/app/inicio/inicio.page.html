@@ -24,6 +24,8 @@
 
   </div>
 
+
+
   <div class="lembrete-titulo" routerLink="../lembretes">
     <h2>Lembretes</h2>
     <ion-icon class="icone-arrow" name="caret-forward-outline"></ion-icon>
@@ -153,10 +155,7 @@
 
   </div>
 
-
-
 </ion-content>
-
 
 <ion-menu side="end" contentId="main-content">
   <ion-header>
@@ -178,14 +177,14 @@
     <div class="ajustes-single">
       <p>Privacidade</p>
     </div>
-    <div class="ajustes-single" style="color: red;">
+    <div class="ajustes-single" style="color: red;" id="present-alert">
       <p>Sair da conta</p>
     </div>
 
+    <ion-alert trigger="present-alert" class="custom-alert" header="Deseja sair da conta?" [buttons]="alertButtons"></ion-alert>
 
   </ion-content>
 </ion-menu>
-
 <!-- footer -->
 
 <ion-tab-bar slot="bottom">
@@ -194,7 +193,7 @@
   </ion-tab-button>
 
   <ion-tab-button>
-    <ion-icon name="stats-chart-outline" routerLink="../estatisticas"></ion-icon>
+    <ion-icon name="stats-chart-outline" routerLink="../estatisticas" class=""></ion-icon>
   </ion-tab-button>
 
   <ion-tab-button>
@@ -202,14 +201,14 @@
   </ion-tab-button>
 
   <ion-tab-button>
-    <ion-icon routerLink="../produtos" name="cube-outline"></ion-icon>
+    <ion-icon routerLink="../produtos" name="cube-outline" class=""></ion-icon>
   </ion-tab-button>
 
   <ion-tab-button>
     <div class="" id="main-content">
       <ion-buttons>
         <ion-menu-button>
-          <ion-icon name="settings-outline"></ion-icon>
+          <ion-icon name="settings-outline" style="color: rgb(75, 75, 75);"></ion-icon>
         </ion-menu-button>
       </ion-buttons>
     </div>
@@ -217,3 +216,4 @@
   </ion-tab-button>
 
 </ion-tab-bar>
+

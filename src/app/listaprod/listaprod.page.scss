@@ -16,23 +16,6 @@
   font-size: 25px;
 }
 
-.botao-add {
-  margin-top: 15px;
-  border-radius: 100%;
-  background-color: #0e9b55;
-  color: white;
-  font-weight: 500;
-  font-size: 20px;
-  height: 55px;
-  width: 55px;
-  border: none;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  position: fixed;
-  bottom: 95px;
-  right: 10px;
-  z-index: 9999;
-  font-size: 25px;
-}
 
 .botao-center {
   display: flex;
@@ -73,4 +56,20 @@ ion-list {
 
 .text-dentro-card p {
   margin-right: 25px;
+}
+
+ion-fab {
+bottom: 95px;
+}
+
+ion-fab-button::part(native){
+  background-color: #0e9b55;
+}
+
+ion-fab-button::part(native):hover::after {
+  background-color: #0e9b55;
+}
+
+ion-fab-button::part(native):active::after {
+  background-color: #0e9b55;
 }

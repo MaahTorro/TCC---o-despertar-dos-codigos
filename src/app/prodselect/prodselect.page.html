@@ -1,12 +1,50 @@
-<ion-content [fullscreen]="true">
-  <div class="gradient">
-    <h1><u>Estatísticas</u></h1>
-  </div>
-  
 
+<ion-content>
+  <div class="gradient">
+    <h1><u>"Nome do produto"</u></h1>
+  </div>
+
+
+  <div class="edit-quantidade">
+    <p class="text-inicio">Quantidade:</p>
+    <div class="box-number">60</div>
+    <p><b style="color: #143CC9; font-size: 20px;">40</b> para o mínimo</p>
+  </div>
+
+  <div class="edit-quantidade">
+    <p class="text-inicio">Valor:</p>
+    <div class="box-number">R$ 20,00</div>
+    <p><b style="color: #143CC9; font-size: 20px;">5</b> reais de lucro</p>
+  </div>
+
+  <div class="edit-quantidade">
+    <p class="text-inicio">Validade:</p>
+    <div class="box-number">20 / 12</div>
+    <p>Restam <b style="color: #143CC9; font-size: 20px;">4</b> meses</p>
+  </div>
+ 
+
+  <div class="titulo">Descrição:</div>
+  <div class="center">
+  <input type="text" class="box-edit" placeholder="Crie uma descrição (opcional)">
+</div>
+
+<div class="titulo">Preço de produção:</div>
+<div class="center">
+  <input type="text" class="box-edit" placeholder="Valor de produção (opcional)">
+</div>
+
+
+<div class="titulo">Itens usados:</div>
+<div class="center">
+<div class="box-edit"></div>
+</div>
 
 
 </ion-content>
+
+
+
 
 
 <ion-menu side="end" contentId="main-content">
@@ -45,7 +83,7 @@
   </ion-tab-button>
 
   <ion-tab-button>
-    <ion-icon name="stats-chart-outline" routerLink="../estatisticas" class="selected"></ion-icon>
+    <ion-icon name="stats-chart-outline" routerLink="../estatisticas" class=""></ion-icon>
   </ion-tab-button>
 
   <ion-tab-button>
