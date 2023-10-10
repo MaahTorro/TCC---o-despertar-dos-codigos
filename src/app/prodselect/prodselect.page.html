@@ -1,4 +1,3 @@
-
 <ion-content>
   <div class="gradient">
     <h1><u>"Nome do produto"</u></h1>
@@ -22,30 +21,38 @@
     <div class="box-number">20 / 12</div>
     <p>Restam <b style="color: #143CC9; font-size: 20px;">4</b> meses</p>
   </div>
- 
+
 
   <div class="titulo">Descrição:</div>
   <div class="center">
-  <input type="text" class="box-edit" placeholder="Crie uma descrição (opcional)">
-</div>
+    <input type="text" class="box-edit" placeholder="Crie uma descrição (opcional)">
+  </div>
 
-<div class="titulo">Preço de produção:</div>
-<div class="center">
-  <input type="text" class="box-edit" placeholder="Valor de produção (opcional)">
-</div>
+  <div class="titulo">Preço de produção:</div>
+  <div class="center">
+    <input type="number" class="box-edit" placeholder="Valor de produção (opcional)">
+  </div>
 
 
-<div class="titulo">Itens usados:</div>
-<div class="center">
-<div class="box-edit"></div>
-</div>
+  <div class="titulo">Itens usados:</div>
 
+
+  <ion-list>
+
+    <ion-select aria-label="Itens usados" toggleIcon="caret-down-outline"
+      placeholder="Selecione os itens usados (opcional)" [multiple]="true">
+      <ion-select-option>Pão</ion-select-option>
+      <ion-select-option>Alface</ion-select-option>
+      <ion-select-option>Batata frita</ion-select-option>
+      <ion-select-option>Refrigerante</ion-select-option>
+      <ion-select-option>Suco</ion-select-option>
+      <ion-select-option>Abacaxi</ion-select-option>
+      <ion-select-option>Açai</ion-select-option>
+    </ion-select>
+
+  </ion-list>
 
 </ion-content>
-
-
-
-
 
 <ion-menu side="end" contentId="main-content">
   <ion-header>
@@ -71,7 +78,8 @@
       <p>Sair da conta</p>
     </div>
 
-    <ion-alert trigger="present-alert" class="custom-alert" header="Deseja sair da conta?" [buttons]="alertButtons"></ion-alert>
+    <ion-alert trigger="present-alert" class="custom-alert" header="Deseja sair da conta?" [buttons]="alertButtons">
+    </ion-alert>
 
   </ion-content>
 </ion-menu>
@@ -95,15 +103,7 @@
   </ion-tab-button>
 
   <ion-tab-button>
-    <div class="" id="main-content">
-      <ion-buttons>
-        <ion-menu-button>
-          <ion-icon name="settings-outline" style="color: rgb(75, 75, 75);"></ion-icon>
-        </ion-menu-button>
-      </ion-buttons>
-    </div>
-
-  </ion-tab-button>
+    <ion-icon routerLink="../ajustes" name="settings-outline" class=""></ion-icon>
+  </ion-tab-button> 
 
 </ion-tab-bar>
-

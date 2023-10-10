@@ -64,7 +64,7 @@ ion-tabs {
 
 .box-edit {
   border: #143cc9 2px solid;
-  height: 50px;
+  height: 58px;
   width: 90%;
   border-radius: 5px;
   text-indent: 10px;
@@ -90,4 +90,59 @@ ion-tabs {
 
 input:focus {
   outline: none;
+}
+
+// caixa select
+
+ion-select {
+  background-color: white;
+  width: 90%;
+  border: #143CC9 2px solid;
+  border-radius: 5px;
+  color: #143CC9;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-indent: 10px;
+  height: 58px;
+  font-weight: 700;
+  margin-bottom: 23px;
+  text-overflow: ellipsis;
+  white-space: inherit;
+  overflow: hidden;
+}
+
+ion-select::part(icon){
+  margin-top: 1px;
+  color: #143CC9;
+  
+}
+
+ion-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// not important | comando básico pra remover "setinhas" que aparecem do lado do input type number 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+//  animation in ion-select arrow icon
+
+ion-select.always-flip::part(icon) {
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ion-select.always-flip.select::part(icon) {
+  transform: rotate(180deg);
+}
+
+ion-select-option {
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

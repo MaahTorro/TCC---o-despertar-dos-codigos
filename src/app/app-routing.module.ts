@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'prodselect',
     loadChildren: () => import('./prodselect/prodselect.module').then( m => m.ProdselectPageModule)
   },
+  {
+    path: 'ajustes',
+    loadChildren: () => import('./ajustes/ajustes.module').then( m => m.AjustesPageModule)
+  },
 ];
 
 @NgModule({

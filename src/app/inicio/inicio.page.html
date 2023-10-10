@@ -5,32 +5,29 @@
   </div>
   <div class="text-box">
 
+
     <div class="info-box">
       <h2>R$129</h2>
       <p>Semanal</p>
     </div>
-
 
     <div class="info-box">
       <h2>R$232</h2>
       <p>Mensal</p>
     </div>
 
-
     <div class="info-box">
       <h2>R$458</h2>
       <p>Anual</p>
     </div>
 
+  
   </div>
-
-
 
   <div class="lembrete-titulo" routerLink="../lembretes">
     <h2>Lembretes</h2>
     <ion-icon class="icone-arrow" name="caret-forward-outline"></ion-icon>
   </div>
-
 
   <div class="box-center-content">
 
@@ -59,8 +56,6 @@
         </div>
         <p>Um evento está próximo.</p>
       </div>
-
-
 
     </div>
 
@@ -95,16 +90,16 @@
           <div class="legenda-color"></div>
           <div class="legenda-text">Legenda</div>
         </div>
-      </div>
-    </div>
 
+      </div>
+
+    </div>
 
 
   </div>
 
   <div class="vender-titulo">
     <h2>Vender</h2>
-    <ion-icon class="icone-arrow" name="caret-forward-outline"></ion-icon>
   </div>
 
   <div class="box-center-content">
@@ -157,34 +152,6 @@
 
 </ion-content>
 
-<ion-menu side="end" contentId="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <div class="a">
-
-        <ion-title>Ajustes</ion-title>
-        <ion-menu-toggle>
-          <ion-icon name="close"></ion-icon>
-        </ion-menu-toggle>
-      </div>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">
-
-    <div class="ajustes-single">
-      <p>Detalhes da conta</p>
-    </div>
-    <div class="ajustes-single">
-      <p>Privacidade</p>
-    </div>
-    <div class="ajustes-single" style="color: red;" id="present-alert">
-      <p>Sair da conta</p>
-    </div>
-
-    <ion-alert trigger="present-alert" class="custom-alert" header="Deseja sair da conta?" [buttons]="alertButtons"></ion-alert>
-
-  </ion-content>
-</ion-menu>
 <!-- footer -->
 
 <ion-tab-bar slot="bottom">
@@ -205,15 +172,9 @@
   </ion-tab-button>
 
   <ion-tab-button>
-    <div class="" id="main-content">
-      <ion-buttons>
-        <ion-menu-button>
-          <ion-icon name="settings-outline" style="color: rgb(75, 75, 75);"></ion-icon>
-        </ion-menu-button>
-      </ion-buttons>
-    </div>
-
+    <ion-icon routerLink="../ajustes" name="settings-outline" class=""></ion-icon>
   </ion-tab-button>
+
 
 </ion-tab-bar>
 

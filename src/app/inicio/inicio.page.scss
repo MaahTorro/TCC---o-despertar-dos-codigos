@@ -1,7 +1,7 @@
 .gradient {
   height: 200px;
   width: 100%;
-  background-image: linear-gradient(#143CC9, #1D8EFC);
+  background-image: linear-gradient(#143cc9, #1d8efc);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   left: 50%;
   margin-left: -150px;
   margin-top: -40px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 80px;
   width: 300px;
   display: flex;
@@ -25,14 +25,14 @@
 }
 
 .info-box h2 {
-  color: #1765DB;
+  color: #1765db;
   font-size: 20px;
   margin: 0%;
   font-weight: 700;
 }
 
 .info-box p {
-  color: #212C4A;
+  color: #212c4a;
   font-size: 16px;
   text-align: center;
   margin: 0%;
@@ -40,10 +40,10 @@
 }
 
 .selected {
-  color: #143CC9;
+  color: #143cc9;
   font-size: 32px;
   margin-bottom: 7px;
-  transition: 2s
+  transition: 2s;
 }
 
 ion-tabs {
@@ -54,7 +54,7 @@ ion-tabs {
 .gradient {
   height: 200px;
   width: 100%;
-  background-image: linear-gradient(#143CC9, #1D8EFC);
+  background-image: linear-gradient(#143cc9, #1d8efc);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,7 @@ ion-tabs {
   left: 50%;
   margin-left: -150px;
   margin-top: -40px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 90px;
   width: 300px;
   display: flex;
@@ -95,10 +95,9 @@ ion-tabs {
   flex-direction: column;
   width: 90%;
   height: 190px;
-  background-color: #d8e7ff38;
+  background-color: #ffffff;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-
 }
 
 .box-center-content {
@@ -144,7 +143,6 @@ ion-tabs {
   margin: 20px;
 }
 
-
 .vender-titulo {
   display: flex;
   justify-content: space-between;
@@ -155,13 +153,12 @@ ion-tabs {
 .box-estat {
   width: 90%;
   height: 190px;
-  background-color: #d8e7ff38;
+  background-color: #ffffff;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 5px;
-
 }
 
 .estat {
@@ -174,7 +171,7 @@ ion-tabs {
 .legenda-color {
   height: 15px;
   width: 15px;
-  background-color: #143CC9;
+  background-color: #143cc9;
 }
 
 .legenda-estat {
@@ -182,7 +179,6 @@ ion-tabs {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-
 }
 
 .legenda-text {
@@ -198,15 +194,15 @@ ion-tabs {
 }
 
 .azul {
-  background-color: #143CC9;
+  background-color: #143cc9;
 }
 
 .amarelo {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .vermelho {
-  background-color: #EB1F1F;
+  background-color: #eb1f1f;
 }
 
 .backgroundvender {
@@ -239,7 +235,7 @@ ion-tabs {
   flex-direction: column;
   width: 90%;
   height: 250px;
-  background-color: #d8e7ff38;
+  background-color: #ffffff;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   margin-bottom: 50px;
@@ -284,4 +280,28 @@ ion-buttons {
   align-items: center;
   justify-content: center;
   border-radius: 5px 0px 0px 5px;
+}
+
+ion-menu-button:focus {
+  border: none;
+  outline: none;
+}
+
+ion-content {
+  outline: none;
+  border: none;
+}
+
+ion-content:focus {
+  outline: none;
+  border: none;
+}
+
+.botao-menu {
+  font-size: 23px;
+}
+
+ion-menu-button {
+  width: 96.75px;
+  height: 56px;
 }
