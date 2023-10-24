@@ -6,13 +6,15 @@
 
   <div class="edit-quantidade">
     <p class="text-inicio">Quantidade:</p>
-    <div class="box-number">60</div>
+    <div class="box-number">
+      <input type="number">
+    </div>
     <p><b style="color: #143CC9; font-size: 20px;">40</b> para o mínimo</p>
   </div>
 
   <div class="edit-quantidade">
     <p class="text-inicio">Valor:</p>
-    <div class="box-number">R$ 20,00</div>
+    <div class="box-number"> <input type="number"></div>
     <p><b style="color: #143CC9; font-size: 20px;">5</b> reais de lucro</p>
   </div>
 
@@ -38,7 +40,6 @@
 
 
   <ion-list>
-
     <ion-select aria-label="Itens usados" toggleIcon="caret-down-outline"
       placeholder="Selecione os itens usados (opcional)" [multiple]="true">
       <ion-select-option>Pão</ion-select-option>
@@ -49,40 +50,46 @@
       <ion-select-option>Abacaxi</ion-select-option>
       <ion-select-option>Açai</ion-select-option>
     </ion-select>
-
   </ion-list>
+
+  <div class="section-itens">
+
+    <div class="box-itens">
+      <div class="numero-item">
+        <p>50 - Pão</p>
+        <p>R$ 5,00</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-itens">
+
+    <div class="box-itens">
+      <div class="numero-item">
+        <p>00 - Carne</p>
+        <p>R$ 0,00</p>
+      </div>
+    </div>
+
+  </div>
+
 
 </ion-content>
 
-<ion-menu side="end" contentId="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <div class="a">
 
-        <ion-title>Ajustes</ion-title>
-        <ion-menu-toggle>
-          <ion-icon name="close"></ion-icon>
-        </ion-menu-toggle>
-      </div>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">
 
-    <div class="ajustes-single">
-      <p>Detalhes da conta</p>
-    </div>
-    <div class="ajustes-single">
-      <p>Privacidade</p>
-    </div>
-    <div class="ajustes-single" style="color: red;" id="present-alert">
-      <p>Sair da conta</p>
-    </div>
 
-    <ion-alert trigger="present-alert" class="custom-alert" header="Deseja sair da conta?" [buttons]="alertButtons">
-    </ion-alert>
 
-  </ion-content>
-</ion-menu>
+
+
+
+
+
+
+
+
+
 <!-- footer -->
 
 <ion-tab-bar slot="bottom">
@@ -104,6 +111,6 @@
 
   <ion-tab-button>
     <ion-icon routerLink="../ajustes" name="settings-outline" class=""></ion-icon>
-  </ion-tab-button> 
+  </ion-tab-button>
 
 </ion-tab-bar>

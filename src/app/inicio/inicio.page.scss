@@ -305,3 +305,10 @@ ion-menu-button {
   width: 96.75px;
   height: 56px;
 }
+
+.legenda-text p {
+  max-width: 100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

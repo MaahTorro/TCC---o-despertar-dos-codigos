@@ -13,8 +13,8 @@ section {
   background-image: url(../../assets/icon/logo.svg);
   background-size: cover;
   background-position: center;
-  width: 220px;
-  height: 220px;
+  width: 160px;
+  height: 160px;
   margin-bottom: 10px;
 }
 
@@ -165,4 +165,12 @@ h1 {
   .logo {
     display: none;
   }
+}
+
+@media screen and (max-height: 740px){
+
+  ion-footer {
+    display: none;
+  }
+
 }

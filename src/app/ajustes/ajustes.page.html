@@ -1,13 +1,39 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>ajustes</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content> 
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">ajustes</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <button class="back-button" (click)="goBack()">
+    <ion-icon name="caret-back-outline"></ion-icon>
+  </button>
+  <h1>Ajustes</h1>
+
+  <section>
+
+    <div class="box-textos">
+      <div class="text-box">
+        <h2>Dados da conta</h2>
+      </div>
+      
+      <div class="text-box">
+        <h2>Lorem ipsum</h2>
+      </div>
+      
+    <div class="text-box">
+      <h2>Lorem ipsum</h2>
+    </div>
+    
+    <div class="text-box" id="present-alert">
+        <h2 class="sair">Sair da conta</h2>
+    </div>
+  </div>
+
+
+  <ion-alert
+  trigger="present-alert"
+  header="Deseja sair da sua conta?"
+  [buttons]="alertButtons"
+></ion-alert>
+  
+</section>
+
+
+
 </ion-content>

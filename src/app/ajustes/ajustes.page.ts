@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-ajustes',
@@ -7,7 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AjustesPage implements OnInit {
 
-  constructor() { }
+  constructor(private location: Location) { }
+
+  goBack() {
+    this.location.back();
+  }
+
+  
+  public alertButtons = [
+    
+
+    {
+      text: 'Cancelar',
+      handler: () => {
+        console.log('usuário cancelou')
+      }
+
+    },
+    {
+      text: 'Sair',
+      handler: () => {
+        window.location.href = '../home'
+      }
+    },
+  ];
+
 
   ngOnInit() {
   }
